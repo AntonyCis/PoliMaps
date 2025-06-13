@@ -307,11 +307,27 @@ main {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .mobile__buttons:hover{
     cursor: pointer;
+}
+
+.ps {
+  transition: transform 0.3s ease;
+}
+
+.ps:hover {
+  transform: translateY(-5px);
+}
+
+.gp {
+  transition: transform 0.3s ease;
+}
+
+.gp:hover {
+  transform: translateY(-5px);
 }
 
 @media (width >= 768px) {
