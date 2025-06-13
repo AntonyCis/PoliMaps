@@ -7,120 +7,196 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3203/3203011.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </noscript>
 
 </head>
 <body>
 
     <!-- Start - Section Header -->
-    <header class="navbar">
-        <div class="navbar_container">
-            <h1 class="navbar_logo">Pol <img src="./src/images/posicion.png" alt="ubicacion-logo">Maps</h1>
-            <ul class="navbar_menu">
+    <header class="container">
+        <nav class="navbar__container">
+            <h1 class="navbar__logo">Pol <img class="logo__img" src="./src/images/posicion.avif" alt="ubicacion__logo">Maps</h1>
+            <ul class="navbar__menu">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Mapa</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#"><img class="navbar_img" src="./src/images/barra-de-navegacion.png" alt="navbar_img"></a></li>
+                <li><a href="#"><img class="navbar__img" src="./src/images/barra-de-navegacion.png" alt="navbar_img"></a></li>
             </ul>
-        </div>
-    <div class="navbar_phrase">
-        <h2>"Descubre la EPN a un clic y recorre el campus como un experto."</h2>
-    </div>
+            
+        </nav>
+        <h2 class="navbar__phrase">"Descubre la EPN a un clic y recorre el campus como un experto."</h2>
     </header>
-
     <!-- End - Section Header -->
 
     <!-- Start - Section Main -->
     <main class="hero">
-        <div class="hero__overlay">
-        <div class="hero__content">
-            <div class="hero__text-box">
-            <p>
-            ¿Es tu primer día en la ESFOT y no sabes por dónde empezar?<br />
-            Te ayudamos a ubicarte, conocer la ESFOT, encontrar tus salones y sentirte parte de esta nueva etapa. Aquí tienes todo lo que necesitas para empezar con confianza.
-            </p>
-            </div>
-            <div class="hero__image-box">
-        <img src="./src/images/mapa.png" alt="Mapa EPN" />
-        </div>
-    </div>
-    </div>
+      <div class="hero__text">
+        <p>
+          ¿Es tu primer día en la ESFOT y no sabes por dónde empezar?<br />
+          Te ayudamos a ubicarte, conocer la ESFOT, encontrar tus salones y sentirte parte de esta nueva etapa. Aquí tienes todo lo que necesitas para empezar con confianza.
+        </p>
+      </div>
+      <div class="hero__image">
+        <img src="./src/images/mapa.avif" alt="Mapa EPN" />
+      </div>
     </main>
-
     <!-- End - Section Main -->
     
     <!-- Start - Section About -->
-<div class="about__container">
-
-  <!-- Barra roja superior ancha -->
-  <div class="about__title-bar"></div>
-
-  <div class="about__line">
-    <!-- Imagen -->
-    <div class="about__image-wrapper">
-      <img src="https://webhistorico.epn.edu.ec/wp-content/uploads/2016/03/imagen-ESFOT.jpg" alt="Mapa de la ESFOT" class="about__image" />
-    </div>
-
-    <!-- Título y textos -->
-    <div class="about__texts">
-      <h2 class="about__title">Mapa</h2>
-
-      <p class="about__text">
-        <i class="fas fa-chalkboard-teacher"></i> Espacios Académicos
-      </p>
-      <p class="about__text">
-        <i class="fas fa-compass"></i> Ubicación y orientación
-      </p>
-      <p class="about__text">
-        <i class="fas fa-user-graduate"></i> Servicios estudiantiles
-      </p>
-      <p class="about__text">
-        <i class="fas fa-tree"></i> Zonas comunes
-      </p>
-    </div>
-  </div>
-
+    <section class="container">
+      <div class="about">
+        <div class="about__container">
+          <h2 class="about__title">Sobre Nosotros</h2>
+          <p class="about__text">Polimaps es una aplicación de geolocalización desarrollada por estudiantes universitarios para estudiantes universitarios de la ESFOT en la EPN. Nació como un proyecto colaborativo con el objetivo de facilitar la orientación y movilidad dentro del campus, ofreciendo información útil y actualizada sobre aulas, laboratorios, servicios y puntos de interés académico. Creemos en el poder de la tecnología para mejorar la vida estudiantil y estamos comprometidos con construir soluciones innovadoras, accesibles y pensadas desde la experiencia de quienes viven el día a día universitario.</p>
+        </div>
+        
+        <div class="about__img">
+          <img src="./src/images/logo-epn.webp" alt="Logo Polimaps" loading="lazy">
+        </div>
+      </div>
+    </section>
     <!-- End - Section About -->
 
-  <!-- Start - Section Services -->
-  <!-- Barra blanca con acceso al mapa -->
-  <div class="about__bottom-box">
-  <div class="about__bottom-text">
-  Acceso al mapa online <span class="access-icon">»»</span>
-</div>
-  <div class="about__bottom-button-wrapper">
-    <button class="about__bottom-button">
-      <i class="fas fa-map"></i> Mapa
-    </button>
-  </div>
-</div>
-
-</div>   
+    <!-- Start - Section Services -->
+    <div class="bar">&nbsp;</div> <!-- espacio no rompible para que tenga altura -->
+    <section class="products">
+      <div class="product__img">
+        <img src="./src/images/epn-map_imagen-ESFOT.webp" alt="EPN ESFOT MAPA" loading="lazy">
+      </div>
+      <div class="services">
+        <h2 class="services__title">Servicios</h2>
+        <p class="service">
+          <i class="fas fa-chalkboard-teacher"></i> Espacios Académicos
+        </p>
+        <p class="service">
+          <i class="fas fa-compass"></i> Ubicación y orientación
+        </p>
+        <p class="service">
+          <i class="fas fa-user-graduate"></i> Servicios estudiantiles
+        </p>
+        <p class="service">
+          <i class="fas fa-tree"></i> Zonas comunes
+        </p>
+      </div>
+    </section>
     <!-- End - Section Services -->
 
 
 
     <!-- Start - Section App -->
+    <section class="app">
+      <div class="mobile">
+        <h2 class="mobile__title">Acceso al mapa online >>  </h2>
+        <div class="mobile__buttons">
+          <a href="#"><img src="./src/images/appstore.png" alt="PlayStore" loading="lazy"></a>
+          <a href="#"><img src="./src/images/googleplay.png" alt="GooglePlay" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
     <!-- End - Section App -->
 
-
-
     <!-- Start - Section Gallery -->
+    <section class="gallery">
+      <div class="gallery__images">
+        <img src="./src/images/imgVideo.webp" alt="Video">
+      </div>
+      <div class="gallery__downloads">
+        <h2 class="gallery__title">Descarga Guias</h2>
+        <ul class="download__list">
+            <li class="download__item">
+            📚 Biblioteca y acceso a recursos digitales
+            </li>
+            <li class="download__item">
+              ☕ Cafeterías y zonas de descanso
+            </li>
+            <li class="download__item">
+              🚌 Rutas de transporte
+            </li>
+            <li class="download__item">
+              💻 Acceso a Wi-Fi y laboratorios
+            </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar">&nbsp;</div>
     <!-- End - Section Gallery -->
 
-
+    <!-- Start - Section frequently questions -->
+    <section class="frequent">
+      <div class="frequent__container">
+        <h2 class="frequent__title">Preguntas Frecuentes</h2>
+        <ul class="frequent__list">
+          <li class="frequent__item">
+            ¿Qué hago si no sé dónde está mi aula? <i class="fa fa-arrow-circle-right"></i>
+          </li>
+          <li class="frequent__item">
+            ¿Donde encuentro información sobre eventos? <i class="fa fa-arrow-circle-right"></i>
+          </li>
+          <li class="frequent__item">
+            ¿Cómo registro eventos en el mapa? <i class="fa fa-arrow-circle-right"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End - Section frequently questions  -->
 
     <!-- Start - Section Contact -->
+    <section class="container contact">
+      <div class="contact__form">
+        <h2 class="contact__title">Contactanos</h2>
+        <form action="https://formsubmit.co/antony.cisneros@epn.edu.ec" method="POST">
+          <input type="name" name="nombre" placeholder="Nombre" required>
+          <input type="email" name="correo" placeholder="Correo" required>
+          <input type="tel" name="celular" placeholder="Celular" required>
+          <textarea name="observaciones" placeholder="Observaciones" rows="4"></textarea>
+          <label class="checkbox__label">
+            <input type="checkbox" required>
+                    Términos y condiciones
+          </label>
+          <button type="submit" class="btn button">Enviar</button>
+        </form>
+      </div>
+    </section>
     <!-- End - Section Contact -->
 
 
     <!-- Start - Section Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__social">
+                <h3>Síguenos en redes</h3>
+                <div class="social__icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h3>Enlaces de interés</h3>
+                <div class="links">
+                    <a href="#">Soporte técnico</a>
+                    <a href="#">Blog de noticias</a>
+                    <a href="#">Preguntas frecuentes (FAQ)</a>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+              <img src="./src/images/ESFOT.avif" alt="">
+                <h3>Contacto</h3>
+                <p class="write">polimaps@gmail.com</p>
+            </div>
+        </div>
+
+        <hr/>
+        <p class="footer__copy">© Derechos Reservados -  2025 Escuela de Formación de Tecnólogos. Sitio desarrollado por estudiantes para estudiantes. 💛</p>
+    </footer>
     <!-- End - Section Footer -->
 
 
